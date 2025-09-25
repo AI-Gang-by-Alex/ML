@@ -9,7 +9,7 @@ def open_site():
     opts.headless = False
     opts.add_argument("--window-size=1200,800")
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=opts)
-    driver.get("https://www.banki.ru/services/responses/list/")
+    driver.get("https://www.banki.ru/services/responses/bank/gazprombank/")
 
     time.sleep(5)
     print("Title:", driver.title)
